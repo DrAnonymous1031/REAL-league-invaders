@@ -12,7 +12,7 @@ public class League_runner {
 	public void setup() {
 		JFrame beth = new JFrame();
 		JPanel martha = new JPanel();
-		Font titleFont = ("Times New Roman");
+		Font titleFont = new Font("Arial", 10, 10);
 		beth.setSize(800,800);
 		beth.setVisible(true);
 		beth.add(martha);
