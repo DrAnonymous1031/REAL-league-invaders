@@ -7,7 +7,10 @@ import javax.swing.*;
 
 public class League_runner {
 	public League_runner() {
-		
+		final int MENU = 0;
+		final int GAME = 1;
+		final int END = 2;
+		int Currentstate = MENU;
 	}
 	public void setup() {
 		JFrame beth = new JFrame();
@@ -17,7 +20,8 @@ public class League_runner {
 		beth.setVisible(true);
 		beth.add(martha);
 		GamePanel game = new GamePanel();
-		game.paintComponent(null);
+		game.start();
+		beth.add(game);
 		beth.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	public static void main(String[] args) {
