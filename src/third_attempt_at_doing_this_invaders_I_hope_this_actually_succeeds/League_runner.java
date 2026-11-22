@@ -7,11 +7,9 @@ import javax.swing.*;
 
 public class League_runner {
 	public League_runner() {
-		final int MENU = 0;
-		final int GAME = 1;
-		final int END = 2;
-		int Currentstate = MENU;
+		GamePanel panel = new GamePanel();
 	}
+
 	public void setup() {
 		JFrame beth = new JFrame();
 		JPanel martha = new JPanel();
